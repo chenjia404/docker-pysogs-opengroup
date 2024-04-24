@@ -1,0 +1,14 @@
+version: '3.8'
+name: pysogs-opengroup
+
+services:
+
+  opengroup:
+    container_name: opengroup
+    image: chenjia404/pysogs-opengroup
+    volumes:
+      - "./opengroup-data:/app"
+    tty: True
+    stdin_open: True
+    ports:
+      - 8000:8000
